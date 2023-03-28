@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1ebfc1;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* common */
+
+.heading {
+    font-weight: 700;
+    font-size: 4.2rem;
+    line-height: 1.5;
+    color: #0d1111;
+}
+
+.text {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.main-content {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* header */
+
+.header {
+    /* background-color: var(--primary-color); */
+    padding-top: 40px;
+    position: sticky;
+    top: -40px;
+    z-index: 1;
+}
+
+.header .body {
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+.header .navbar {
+    margin-left: 215px;
+    /* align-self: center; */
+}
+
+.header .list {
+    display: flex;
+    align-items: center;
+}
+
+.header .list .item {
+    padding: 12px 20px;
+}
+
+.header .navbar .list a {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #2f3a3b;
+}
+
+.header .navbar .item a:hover,
+.header .navbar .item.active {
+    text-shadow: 1px 0 0 currentColor;
+}
+
+.header .action {
+    margin-left: auto;
+    display: flex;
+}
+
+.header .action__btn {
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    padding: 13px 24px;
+    text-align: center;
+    color: #494949;
+}
+
+.header .action__btn:hover {
+    padding: 12px 23.5px;
+    border: 1px solid #1ebfc1;
+    border-radius: 6px;
+    text-shadow: 1px 0 0 currentColor;
+    color: #1ebfc1;
+}
